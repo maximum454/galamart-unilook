@@ -1,0 +1,95 @@
+.newyear2023-content{
+  margin: 0 0 60px;
+  padding: 14px 0;
+  background: #6B0008;
+  box-shadow: 0 4px 4px #520107;
+  &__body{
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+  }
+  &__title{
+    flex: 1 1 324px;
+    max-width: 324px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF9AF;
+  }
+  &__count{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 8px 13px;
+    .time{
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 78px;
+      text-transform: uppercase;
+      color: #FEA143;
+    }
+    .text{
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #FFF9AF;
+      vertical-align: middle;
+    }
+  }
+
+  @include r(1023){
+    &__count{
+      gap: 8px 50px;
+      .time{
+        font-weight: 700;
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #FEA143;
+        text-align: center;
+      }
+      .text{
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #FFF9AF;
+      }
+    }
+  }
+  @include r(767){
+    margin: 0 0 54px;
+    &__body{
+      justify-content: center;
+    }
+    &__title{
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      flex: 1 0 100%;
+      text-align: center;
+    }
+    &__count{
+      gap: 13px;
+      justify-content: center;
+      flex: 1 0 100%;
+      .time{
+        font-size: 36px;
+        line-height: 44px;
+      }
+      .text{
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+  }
+}

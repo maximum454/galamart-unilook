@@ -1,0 +1,41 @@
+<header class="header">
+    <div class="container">
+        <div class="header__top">
+            <a href="" class="header__logo">NEVAR</a>
+            <div class="header__city"><i class="icon icon-location"></i>Анталья</div>
+            <a href="#" class="header__favorite">Избранное <span>10</span></a>
+            <a href="#" class="header__login btn btn-light">Личный кабинет</a>
+            <button id="menu-mobile" class="header__burger btn btn-link"><i class="icon icon-menu"></i></button>
+        </div>
+        <div class="header__bottom">
+            <div class="header__search">
+                <form class="header-form-search" action="">
+                    <input class="form-control" type="text" placeholder="Что вы ищете?">
+                    <button type="button" class="header-form-search__btn btn btn-primary"><i class="icon icon-search"></i></button>
+                </form>
+            </div>
+            <div class="header__nav">
+                <ul class="nav-header">
+                    <li class="nav-header__item">
+                        <a class="nav-header__link" href=""><i class="icon icon-cat"></i>Категории</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu__item"><a class="dropdown-menu__link" href=""></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-header__item"><a class="nav-header__link" href=""><i class="icon icon-shop"></i>Магазины</a></li>
+                    <li class="nav-header__item"><a class="nav-header__link btn btn-primary" href="">Подать объявление</a></li>
+                </ul>
+            </div>
+        </div>
+            @@if (nav === 'Y') { }
+    </div>
+    <div class="menu-mobile">
+        <button class="menu-mobile__close btn btn-link"></button>
+        <ul class="menu-mobile__list">
+            <li class="menu-mobile__item"><a class="menu-mobile__link" href="">Магазины</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link menu-mobile__link--favorite" href="">Избранное <span>10</span></a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link" href="">Личный кабинет</a></li>
+        </ul>
+        <a class="btn btn-primary d-block" href="">Подать объявление</a>
+    </div>
+</header>

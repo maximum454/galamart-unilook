@@ -95,6 +95,38 @@ body{
 	background-color: transparent;
 }
 
+.swiper-button-prev,
+.swiper-button-next{
+	background-image: url("../img/slider-arrow.svg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 86px;
+	height: 127px;
+	&:after{
+		display: none;
+	}
+}
+.swiper-button-next{
+	right: 0;
+	left: auto;
+	transform: rotate(180deg);
+}
+.swiper-button-prev{
+	left: 0;
+}
+@include r(1100){
+	.swiper-button-prev,
+	.swiper-button-next{
+		background-image: url("../img/slider-arrow.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 50px;
+		height: 72px;
+		&:after{
+			display: none;
+		}
+	}
+}
 @include r(1023){
 	.wrp {
 		padding-bottom: 52px;
@@ -104,6 +136,11 @@ body{
 	.wrp {
 		padding-bottom: 52px;
 	}
+	.swiper-button-prev,
+	.swiper-button-next{
+		width: 15px;
+		height: 24px;
+	}
 }
 
 
@@ -111,8 +148,8 @@ body{
 @import "componets/unilook-content";
 @import "componets/unilook-products";
 @import "componets/unilook-idea";
+@import "componets/unilook-sets";
 @import "componets/unilook-articles";
-@import "componets/unilook-video";
 @import "componets/unilook-about";
 
 

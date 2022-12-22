@@ -1,48 +1,45 @@
-.newyear2023-hero{
+.unilook-hero{
   position: relative;
-  padding: 112px 20px 132px;
-  background-image: url("../img/hero-bg.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
+  height: 710px;
+  &:before{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    background-image: url("../img/hero-decor-bg2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../img/hero-decor-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
   &__body{
-    max-width: 684px;
-    padding: 28px 20px 36px;
+    max-width: 892px;
+    height: 100%;
     margin: 0 auto;
-    background: #6B0008;
-    border: 1px solid #FFF9AF;
+    padding: 108px 20px 196px;
+    position: relative;
+  }
+  &__logo{
+    margin: 0 auto;
     text-align: center;
+    position: relative;
+    z-index: 1;
   }
-  &__figure{
-    margin: 0;
-  }
-  &__text{
-    font-weight: 300;
-    font-size: 55px;
-    line-height: 50px;
-    text-align: center;
-    color: #FFF9AF;
-    margin: 0;
-  }
-  @include r(1023){
-    padding: 100px 20px 110px;
-    background-size: 170%;
-  }
-  @include r(767){
-    padding: 88px 20px 54px;
-    background-size: 230%;
-    &__body{
-      padding: 10px 20px;
-    }
-    &__text{
-      font-size: 38px;
-      line-height: 46px;
-    }
-  }
-  @include r(389){
-    &__text{
-      font-size: 29px;
-      line-height: 36px;
-    }
+  @include r(1410){
+    height: 393px;
   }
 }

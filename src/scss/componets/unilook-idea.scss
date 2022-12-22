@@ -1,0 +1,27 @@
+.unilook-idea{
+  margin-bottom: 100px;
+  &__body{
+    max-width: 892px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  &__title{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px rgba(1, 43, 81, 0.42);
+    margin: 0 0 44px;
+  }
+  @include r(767){
+    margin-bottom: 50px;
+    &__title{
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0 0 30px;
+    }
+  }
+}

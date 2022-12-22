@@ -58,6 +58,7 @@
     }
   }
   @include r(767){
+    margin-bottom: 140px;
     &__title{
       font-size: 20px;
       line-height: 24px;

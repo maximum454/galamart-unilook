@@ -1497,10 +1497,10 @@ body {
 }
 
 .unilook-video__body {
-  max-width: 892px;
+  max-width: 1350px;
   height: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
   position: relative;
 }
 
@@ -1512,6 +1512,89 @@ body {
   color: #FFFFFF;
   text-shadow: 0 0 5px rgba(1, 43, 81, 0.42);
   margin: 0 0 44px;
+}
+
+.unilook-video__item {
+  background-color: #FBC8DC;
+  background-image: url("../img/bg.png");
+}
+
+.unilook-video__iframe {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.unilook-video__iframe:before {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+
+.unilook-video__iframe .embed-responsive-item,
+.unilook-video__iframe embed,
+.unilook-video__iframe iframe,
+.unilook-video__iframe object,
+.unilook-video__iframe video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.unilook-video__content {
+  color: #000000;
+  padding: 40px 40px 30px;
+}
+
+.unilook-video__content p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 15px 0 0;
+}
+
+.unilook-video__name {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.unilook-video .swiper-video {
+  overflow: hidden;
+  max-width: 892px;
+  margin: 0 auto;
+}
+
+.unilook-video .swiper-button-prev,
+.unilook-video .swiper-button-next {
+  background-image: url("../img/slider-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 86px;
+  height: 127px;
+}
+
+.unilook-video .swiper-button-prev:after,
+.unilook-video .swiper-button-next:after {
+  display: none;
+}
+
+.unilook-video .swiper-button-next {
+  right: 0;
+  left: auto;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.unilook-video .swiper-button-prev {
+  left: 0;
 }
 
 .unilook-about {
@@ -1638,6 +1721,22 @@ body {
 @media only screen and (max-width: 1410px) {
   .unilook-hero {
     height: 393px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .unilook-video .swiper-button-prev,
+  .unilook-video .swiper-button-next {
+    background-image: url("../img/slider-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 50px;
+    height: 72px;
+  }
+
+  .unilook-video .swiper-button-prev:after,
+  .unilook-video .swiper-button-next:after {
+    display: none;
   }
 }
 
@@ -1795,6 +1894,22 @@ body {
     font-size: 20px;
     line-height: 24px;
     margin: 0 0 30px;
+  }
+
+  .unilook-video__content {
+    color: #000000;
+    padding: 17px 20px 30px;
+  }
+
+  .unilook-video__name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .unilook-video .swiper-button-prev,
+  .unilook-video .swiper-button-next {
+    width: 15px;
+    height: 24px;
   }
 
   .unilook-about {

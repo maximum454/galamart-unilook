@@ -17,6 +17,8 @@
     margin: 0 0 44px;
   }
   &__item{
+    max-width: 852px;
+    margin: 0 auto;
     background-color: #FBC8DC;
     background-image: url("../img/bg.png");
   }
@@ -56,10 +58,20 @@
     font-size: 24px;
     line-height: 29px;
   }
-  .swiper-video{
-    overflow: hidden;
-    max-width: 892px;
+  .swiper-idea{
+    max-width: 1032px;
     margin: 0 auto;
+    &--video{
+      overflow: hidden;
+    }
+  }
+  .swiper-slide{
+    opacity: .4;
+    filter: blur(5px);
+    &.swiper-slide-active{
+      opacity: 1;
+      filter: blur(0);
+    }
   }
   @include r(767){
     margin-bottom: 50px;

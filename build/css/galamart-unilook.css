@@ -1385,6 +1385,8 @@ body {
 }
 
 .unilook-idea__item {
+  max-width: 852px;
+  margin: 0 auto;
   background-color: #FBC8DC;
   background-image: url("../img/bg.png");
 }
@@ -1435,10 +1437,25 @@ body {
   line-height: 29px;
 }
 
-.unilook-idea .swiper-video {
-  overflow: hidden;
-  max-width: 892px;
+.unilook-idea .swiper-idea {
+  max-width: 1032px;
   margin: 0 auto;
+}
+
+.unilook-idea .swiper-idea--video {
+  overflow: hidden;
+}
+
+.unilook-idea .swiper-slide {
+  opacity: 0.4;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.unilook-idea .swiper-slide.swiper-slide-active {
+  opacity: 1;
+  -webkit-filter: blur(0);
+          filter: blur(0);
 }
 
 .unilook-sets {
@@ -1466,12 +1483,21 @@ body {
 .unilook-sets__item--btn {
   background-color: #ffffff;
   border-radius: 17px;
-  height: 100%;
-  max-height: 147px;
+  height: 147px;
   text-align: center;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px;
 }
 
 .unilook-sets__figure {
@@ -1487,7 +1513,7 @@ body {
   max-height: 147px;
   border-radius: 17px;
   overflow: hidden;
-  margin: 0 0 10px;
+  margin: 0;
   background-color: #ffffff;
 }
 
@@ -1496,7 +1522,7 @@ body {
   font-size: 12px;
   line-height: 15px;
   color: #000000;
-  margin: 0;
+  margin: 10px 0 0;
 }
 
 .unilook-sets .embed-responsive {
@@ -1808,6 +1834,10 @@ body {
   .wrp {
     padding-bottom: 52px;
   }
+
+  .unilook-sets__item--btn {
+    height: 120px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1930,6 +1960,31 @@ body {
   .unilook-idea__name {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .unilook-sets {
+    gap: 10px;
+  }
+
+  .unilook-sets__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 calc(25% - 10px);
+            flex: 1 0 calc(25% - 10px);
+    max-width: 25%;
+  }
+
+  .unilook-sets__item--btn {
+    height: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+    padding: 16px;
+    margin-top: 22px;
+  }
+
+  .unilook-sets__name {
+    display: none;
   }
 
   .unilook-articles {

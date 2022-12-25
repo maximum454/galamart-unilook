@@ -124,14 +124,18 @@ body{
 	&:after{
 		display: none;
 	}
+	&:hover{
+		background-image: url("../img/slider-arrow-hover.svg");
+	}
 }
 .swiper-button-next{
 	right: 0;
 	left: auto;
-	transform: rotate(180deg);
+
 }
 .swiper-button-prev{
 	left: 0;
+	transform: rotate(180deg);
 }
 @include r(1100){
 	.swiper-button-prev,
@@ -144,6 +148,7 @@ body{
 		&:after{
 			display: none;
 		}
+
 	}
 }
 @include r(1023){

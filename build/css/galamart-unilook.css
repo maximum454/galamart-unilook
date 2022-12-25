@@ -2401,16 +2401,21 @@ body {
   display: none;
 }
 
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-image: url("../img/slider-arrow-hover.svg");
+}
+
 .swiper-button-next {
   right: 0;
   left: auto;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .swiper-button-prev {
   left: 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .unilook-hero {
@@ -2760,6 +2765,8 @@ body {
   margin: 0 auto;
   background-color: #FBC8DC;
   background-image: url("../img/bg.png");
+  -webkit-box-shadow: 0 0 9px rgba(9, 70, 163, 0.3);
+          box-shadow: 0 0 9px rgba(9, 70, 163, 0.3);
 }
 
 .unilook-idea__iframe {

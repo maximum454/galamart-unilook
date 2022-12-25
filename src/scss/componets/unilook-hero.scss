@@ -1,14 +1,14 @@
 .unilook-hero{
   position: relative;
-  height: 710px;
   &:before{
     content: '';
     position: absolute;
-    bottom: 20px;
+    top: 0;
     left: 0;
     background-image: url("../img/hero-decor-bg2.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
+    background-position: bottom left;
     width: 100%;
     height: 100%;
     z-index: 0;
@@ -16,22 +16,28 @@
   &:after{
     content: '';
     position: absolute;
-    bottom: 0;
+    top:0;
     left: 0;
     right: 0;
     background-image: url("../img/hero-decor-bg.png");
     background-repeat: no-repeat;
+    background-position: bottom center;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 393px;
     z-index: 0;
   }
   &__body{
     max-width: 892px;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     padding: 108px 20px 196px;
     position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
   }
   &__logo{
     margin: 0 auto;
@@ -39,7 +45,91 @@
     position: relative;
     z-index: 1;
   }
-  @include r(1410){
-    height: 393px;
+  &__decor1{
+    position: absolute;
+    bottom: -30px;
+    left: -110px;
+    background-image: url("../img/hero-decor-1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 283px;
+    height: 282px;
+    z-index: 1;
+  }
+  &__decor2{
+    position: absolute;
+    top: 0;
+    right: -20px;
+    background-image: url("../img/hero-decor-2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 360px;
+    height: 238px;
+    z-index: 1;
+  }
+  &__decor3{
+    position: absolute;
+    top: -75px;
+    left: -30px;
+    background-image: url("../img/hero-decor-3.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 355px;
+    height: 248px;
+    z-index: 1;
+  }
+  @include r(1023){
+    &:before{
+      top: -60px;
+    }
+    &:after{
+      top: -60px;
+    }
+  }
+  @include r(767){
+    margin-bottom: 120px;
+    &:before{
+      top: 70px;
+    }
+    &:after{
+      top: -135px;
+      left: 0;
+      right: 0;
+    }
+    &__body{
+      max-width: 892px;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      padding: 50px 20px 23px;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+    &__logo {
+      max-width: 246px;
+    }
+    &__decor1{
+      bottom: -77px;
+      left: 26px;
+      width: 110px;
+      height: 106px;
+    }
+    &__decor2{
+      top: 59px;
+      right: -56px;
+      width: 144px;
+      height: 138px;
+      transform: rotate(-51deg);
+    }
+    &__decor3{
+      position: absolute;
+      top: -20px;
+      left: 10px;
+      width: 156px;
+      height: 85px;
+    }
   }
 }

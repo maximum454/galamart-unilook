@@ -1086,17 +1086,17 @@ body {
 
 .unilook-hero {
   position: relative;
-  height: 710px;
 }
 
 .unilook-hero:before {
   content: "";
   position: absolute;
-  bottom: 20px;
+  top: 0;
   left: 0;
   background-image: url("../img/hero-decor-bg2.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto;
+  background-position: bottom left;
   width: 100%;
   height: 100%;
   z-index: 0;
@@ -1105,29 +1105,71 @@ body {
 .unilook-hero:after {
   content: "";
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
   background-image: url("../img/hero-decor-bg.png");
   background-repeat: no-repeat;
+  background-position: bottom center;
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 393px;
   z-index: 0;
 }
 
 .unilook-hero__body {
   max-width: 892px;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
   padding: 108px 20px 196px;
   position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .unilook-hero__logo {
   margin: 0 auto;
   text-align: center;
   position: relative;
+  z-index: 1;
+}
+
+.unilook-hero__decor1 {
+  position: absolute;
+  bottom: -30px;
+  left: -110px;
+  background-image: url("../img/hero-decor-1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 283px;
+  height: 282px;
+  z-index: 1;
+}
+
+.unilook-hero__decor2 {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  background-image: url("../img/hero-decor-2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 360px;
+  height: 238px;
+  z-index: 1;
+}
+
+.unilook-hero__decor3 {
+  position: absolute;
+  top: -75px;
+  left: -30px;
+  background-image: url("../img/hero-decor-3.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 355px;
+  height: 248px;
   z-index: 1;
 }
 
@@ -1808,12 +1850,6 @@ body {
   display: block;
 }
 
-@media only screen and (max-width: 1410px) {
-  .unilook-hero {
-    height: 393px;
-  }
-}
-
 @media only screen and (max-width: 1100px) {
   .swiper-button-prev,
   .swiper-button-next {
@@ -1833,6 +1869,14 @@ body {
 @media only screen and (max-width: 1023px) {
   .wrp {
     padding-bottom: 52px;
+  }
+
+  .unilook-hero:before {
+    top: -60px;
+  }
+
+  .unilook-hero:after {
+    top: -60px;
   }
 
   .unilook-sets__item--btn {
@@ -1859,8 +1903,64 @@ body {
     height: 24px;
   }
 
+  .unilook-hero {
+    margin-bottom: 120px;
+  }
+
+  .unilook-hero:before {
+    top: 70px;
+  }
+
+  .unilook-hero:after {
+    top: -135px;
+    left: 0;
+    right: 0;
+  }
+
+  .unilook-hero__body {
+    max-width: 892px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px 20px 23px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .unilook-hero__logo {
+    max-width: 246px;
+  }
+
+  .unilook-hero__decor1 {
+    bottom: -77px;
+    left: 26px;
+    width: 110px;
+    height: 106px;
+  }
+
+  .unilook-hero__decor2 {
+    top: 59px;
+    right: -56px;
+    width: 144px;
+    height: 138px;
+    -webkit-transform: rotate(-51deg);
+        -ms-transform: rotate(-51deg);
+            transform: rotate(-51deg);
+  }
+
+  .unilook-hero__decor3 {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    width: 156px;
+    height: 85px;
+  }
+
   .unilook-content {
-    margin-bottom: 140px;
+    margin-bottom: 107px;
   }
 
   .unilook-content__title {

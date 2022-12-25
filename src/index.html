@@ -97,6 +97,7 @@
         </div>
     </section>
 
+    <!--У каждого слайда своя модалка-->
     <section class="unilook-idea">
         <div class="unilook-idea__body">
             <h2 class="unilook-idea__title">Идеи для макияжа</h2>
@@ -104,13 +105,16 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="unilook-idea__item">
+                            <!--modal-1 вызов модального окна -->
                             <div class="unilook-idea__figure" data-remodal-target="modal-1">
+                                <!--Две фото при наведение показываеться вторая -->
                                 <img class="unilook-idea__figure-img-1 img-fluid embed-responsive-item" src="./img/idea-1.png" width="852" height="483" alt="">
                                 <img class="unilook-idea__figure-img-2 img-fluid embed-responsive-item" src="./img/idea-2.png" width="852" height="483" alt="">
                             </div>
                             <div class="unilook-idea__content">
                                 <div class="unilook-idea__name">Макияж в стиле 80-х</div>
                                 <p>Тональный крем для разного типа кожи лица. 3 лайфхака по нанесению тонального крема. Ровный тон лица — главный ключ к успеху любого макияжа.</p>
+                                <!--Такой блок есть еще в модальных окнах-->
                                 <div class="unilook-sets">
                                     <div class="unilook-sets__item">
                                         <figure class="unilook-sets__figure">
@@ -321,6 +325,7 @@
         </div>
     </section>
 
+    <!--Слайдер видео-->
     <section class="unilook-idea">
         <div class="unilook-idea__body">
             <h2 class="unilook-idea__title">Видео</h2>
@@ -388,7 +393,7 @@
         </div>
     </section>
 
-
+    <!--Модальные окна для слайдера-->
     <div class="remodal unilook-modal" data-remodal-id="modal-1" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
 
         <button data-remodal-action="close" class="remodal-close"></button>
@@ -404,6 +409,7 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="unilook-idea__lupa"></div>
+                                    <!--gallery1 - группировка фоток для одного слайда, ссылка введет на большую фотографию-->
                                     <a data-fancybox="gallery1" href="./img/idea-1.png"><img class="img-fluid" src="./img/modal-1.png" width="444" height="318" alt=""></a>
                                 </div>
                                 <div class="swiper-slide">
@@ -807,8 +813,9 @@
     </div>
 </div>
 
-
+<!--Не подключать если на сайте уже есть -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <!-- JS -->
 <script src="js/galamart-unilook.js"></script>
 

@@ -6,13 +6,13 @@
   margin-top: 31px;
   &__item{
     flex: 1 0 calc(20% - 20px);
-    max-width: 20%;
+    max-width: calc(20% - 20px);
     text-decoration: none;
     display: block;
     &--btn{
       background-color: #ffffff;
       border-radius: 17px;
-      height: 147px;
+      height: 138px;
       text-align: center;
       font-weight: 700;
       font-size: 12px;
@@ -21,6 +21,10 @@
       align-items: center;
       justify-content: center;
       padding: 25px;
+      cursor: pointer;
+      &:hover{
+        outline: 2px solid #89C7FE;
+      }
     }
   }
   &__figure{
@@ -32,6 +36,9 @@
     overflow: hidden;
     margin: 0;
     background-color: #ffffff;
+    &:hover{
+      outline: 2px solid #89C7FE;
+    }
   }
   &__name{
     font-weight: 400;

@@ -113,6 +113,9 @@
     height: 30px;
     z-index: 10;
   }
+  &__slider{
+    position: relative;
+  }
   .swiper-idea{
     max-width: 1032px;
     margin: 0 auto;
@@ -120,6 +123,7 @@
       overflow: hidden;
     }
     &--modal{
+      overflow: hidden;
       .swiper-slide{
         opacity: 1;
         filter: blur(0);

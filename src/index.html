@@ -102,6 +102,7 @@
     <section class="unilook-idea">
         <div class="unilook-idea__body">
             <h2 class="unilook-idea__title">Идеи для макияжа</h2>
+            <div class="unilook-idea__slider">
             <div class="swiper-idea">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -275,9 +276,10 @@
 
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            </div>
         </div>
     </section>
 
@@ -323,7 +325,7 @@
                 </a>
             </div>
             <!--Скрипты на кнопку не делал, что бы спрятать кноку нужно навешать класс .d-none-->
-            <button type="button" class="unilook-articles__more">Показать еще</button>
+            <a href="#" class="unilook-articles__more">Показать еще</a>
         </div>
     </section>
 
@@ -331,6 +333,7 @@
     <section class="unilook-idea">
         <div class="unilook-idea__body">
             <h2 class="unilook-idea__title">Видео</h2>
+            <div class="unilook-idea__slider">
             <div class="swiper-idea swiper-idea--video" data-type="video">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -356,15 +359,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            </div>
         </div>
     </section>
 
     <section class="unilook-about">
         <div class="unilook-about__body">
-            <h2 class="unilook-about__title">О ЮниLook</h2>
+            <h2 class="unilook-about__title">О ЮНИLook</h2>
             <div class="unilook-about__items">
                 <a href="#" target="_blank" class="unilook-about__item">
                     <div class="unilook-about__content">
@@ -412,11 +416,11 @@
                                 <div class="swiper-slide">
                                     <div class="unilook-idea__lupa"></div>
                                     <!--gallery1 - группировка фоток для одного слайда, ссылка введет на большую фотографию-->
-                                    <a data-fancybox="gallery1" href="./img/idea-1.png"><img class="img-fluid" src="./img/modal-1.png" width="444" height="318" alt=""></a>
+                                    <a class="fancybox-unilook" href="./img/idea-1.png"><img class="img-fluid" src="./img/modal-1.png" width="444" height="318" alt=""></a>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="unilook-idea__lupa"></div>
-                                    <a data-fancybox="gallery1" href="./img/idea-2.png"><img class="img-fluid" src="./img/modal-2.png" width="356" height="318" alt=""></a>
+                                    <a class="fancybox-unilook" href="./img/idea-2.png"><img class="img-fluid" src="./img/modal-2.png" width="356" height="318" alt=""></a>
                                 </div>
                             </div>
                         </div>

@@ -2370,6 +2370,23 @@ body {
   background: url("../img/bg.png"), linear-gradient(180deg, #94CFFC 0%, #70B8FE 100%);
 }
 
+.fancybox-inner {
+  padding: 0;
+  background-image: none;
+}
+
+.fancybox-toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fancybox-button--close {
+  top: auto;
+  right: auto;
+  bottom: auto;
+}
+
 .fancybox-content {
   -webkit-box-shadow: 0px 4px 77px 32px rgba(5, 96, 147, 0.5);
           box-shadow: 0px 4px 77px 32px rgba(5, 96, 147, 0.5);
@@ -2393,7 +2410,7 @@ body {
   background-size: 100%;
   width: 86px;
   height: 127px;
-  top: 33%;
+  margin-top: -63.5px;
 }
 
 .swiper-button-prev:after,
@@ -2891,12 +2908,20 @@ body {
   z-index: 10;
 }
 
+.unilook-idea__slider {
+  position: relative;
+}
+
 .unilook-idea .swiper-idea {
   max-width: 1032px;
   margin: 0 auto;
 }
 
 .unilook-idea .swiper-idea--video {
+  overflow: hidden;
+}
+
+.unilook-idea .swiper-idea--modal {
   overflow: hidden;
 }
 
@@ -3003,6 +3028,7 @@ body {
 }
 
 .unilook-sets__name {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
@@ -3085,6 +3111,7 @@ body {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  text-decoration: none !important;
 }
 
 .unilook-articles__item:hover {
@@ -3155,11 +3182,22 @@ body {
 }
 
 .unilook-articles__more {
+  border: none;
+  background: transparent;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.unilook-articles .page-link {
   border: 0;
   font-weight: 900;
   font-size: 12px;
   line-height: 15px;
   text-align: center;
+  text-decoration: none;
   color: #000000;
   background: -o-linear-gradient(358.13deg, #FFFFFF 0%, #F1F8FF 100%);
   background: linear-gradient(91.87deg, #FFFFFF 0%, #F1F8FF 100%);
@@ -3170,6 +3208,14 @@ body {
   width: 100%;
   margin: 0 auto;
   display: block;
+}
+
+.unilook-articles .page-link:hover {
+  background: -o-linear-gradient(358.13deg, #FFFFFF 0%, #F1F8FF 100%);
+  background: linear-gradient(91.87deg, #FFFFFF 0%, #F1F8FF 100%);
+  opacity: 0.5;
+  -webkit-box-shadow: -2px 2px 4px rgba(5, 96, 147, 0.5);
+          box-shadow: -2px 2px 4px rgba(5, 96, 147, 0.5);
 }
 
 .unilook-about {
@@ -3417,6 +3463,7 @@ body {
   .swiper-button-next {
     width: 15px;
     height: 24px;
+    margin-top: -12px;
   }
 
   .unilook-hero {

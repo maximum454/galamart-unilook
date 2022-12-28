@@ -101,6 +101,18 @@ body{
 .fancybox-bg{
 	background: url("../img/bg.png"), linear-gradient(180deg, #94CFFC 0%, #70B8FE 100%);
 }
+.fancybox-inner{
+	padding: 0;
+	background-image: none;
+}
+.fancybox-toolbar{
+	display: flex;
+}
+.fancybox-button--close{
+	top: auto;
+	right: auto;
+	bottom: auto;
+}
 .fancybox-content{
 	box-shadow: 0px 4px 77px 32px rgba(5, 96, 147, 0.5);
 }
@@ -120,7 +132,7 @@ body{
 	background-size: 100%;
 	width: 86px;
 	height: 127px;
-	top: 33%;
+	margin-top: calc(0px - 127px / 2);
 	&:after{
 		display: none;
 	}
@@ -164,6 +176,7 @@ body{
 	.swiper-button-next{
 		width: 15px;
 		height: 24px;
+		margin-top: calc(0px - 24px / 2);
 	}
 }
 

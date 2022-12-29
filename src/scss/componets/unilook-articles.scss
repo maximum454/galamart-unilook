@@ -106,14 +106,7 @@
     line-height: 15px;
     text-align: center;
     text-decoration: none;
-  }
-  .page-link{
     border: 0;
-    font-weight: 900;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-    text-decoration: none;
     color: #000000;
     background: linear-gradient(91.87deg, #FFFFFF 0%, #F1F8FF 100%);
     box-shadow: -2px 2px 4px rgba(5, 96, 147, 0.5);
@@ -127,6 +120,9 @@
       opacity: 0.5;
       box-shadow: -2px 2px 4px rgba(5, 96, 147, 0.5);
     }
+  }
+  .page-link{
+
   }
   @include r(767){
     margin-bottom: 50px;
@@ -160,6 +156,9 @@
   @include r(580){
     &__item{
       flex: 1 0 100%;
+      max-width: 100%;
+    }
+    &__more{
       max-width: 100%;
     }
   }

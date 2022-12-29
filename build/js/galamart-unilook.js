@@ -836,7 +836,7 @@ document.querySelectorAll('.unilook-idea').forEach(n => {
         },
         breakpoints: {
             320: {
-                slidesPerView: type === 'modal'? 1.2 : 1,
+                slidesPerView: type === 'modal'? 1.1 : 1,
                 spaceBetween: 0,
                 initialSlide: 0,
             },

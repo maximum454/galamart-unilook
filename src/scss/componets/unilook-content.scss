@@ -26,6 +26,8 @@
       background: url('../img/bg.png'), linear-gradient(180deg, #5564ED 0%, #005BA4 100%);
       box-shadow: -2px 2px 4px rgba(5, 96, 147, 0.5);
       transform: rotate(-2.53deg);
+      background-size: 5%;
+      background-blend-mode: overlay;
       width: 100%;
       height: 100%;
       z-index: 0;
@@ -46,6 +48,8 @@
     background: url('../img/bg.png'), linear-gradient(180deg, #FFA800 0%, #FF5C00 47.92%, #B9059C 100%);
     box-shadow: -2px 2px 4px rgba(5, 96, 147, 0.5);
     position: relative;
+    background-size: 5%;
+    background-blend-mode: overlay;
     p{
       font-weight: 500;
       font-size: 20px;

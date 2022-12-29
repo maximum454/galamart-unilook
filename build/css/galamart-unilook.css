@@ -2658,6 +2658,8 @@ body {
   background: url("../img/bg.png"), -webkit-gradient(linear, left top, left bottom, from(#FC6782), to(#EE37B2));
   background: url("../img/bg.png"), -o-linear-gradient(top, #FC6782 0%, #EE37B2 100%);
   background: url("../img/bg.png"), linear-gradient(180deg, #FC6782 0%, #EE37B2 100%);
+  background-size: 5%;
+  background-blend-mode: overlay;
   z-index: 1;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
